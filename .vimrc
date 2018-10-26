@@ -3,6 +3,12 @@ set wildmode=longest,list " Ex命令自动补全采用bash方式"
 syntax on
 filetype plugin indent on
 
+"VIM
+set mouse=a
+
+autocmd VimEnter * NERDTree
+autocmd VimEnter * Tlist
+
 map <C-n> :NERDTree<CR>
 
 " pathongen
@@ -13,6 +19,7 @@ let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 let Tlist_Use_Right_Window=1
 let Tlist_Sort_Type="name"
+let Tlist_Use_SingleClick=1 "单击跳转"
 
 " omnicppcomplete
 set completeopt=longest,menu
